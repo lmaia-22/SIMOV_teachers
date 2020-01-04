@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 
 var TeacherController = require('../controllers/teacher');
-var checkAuth = require('../middleware/check-auth');
 
 //create a new teacher
 router.post("/", TeacherController.create_teacher);
